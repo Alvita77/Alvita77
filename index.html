@@ -10,13 +10,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
-    --ink:#0e1420;         /* fondo tinta profunda */
-    --ink-2:#141c2b;       /* superficie elevada */
-    --ink-3:#1c2637;       /* borde/superficie */
-    --paper:#eef1f5;       /* texto claro */
-    --muted:#8a97ab;       /* texto secundario */
-    --lime:#c6f24e;        /* acento (de SoundSprout) */
-    --cyan:#4fd1e0;        /* acento frío secundario */
+    --ink:#0e1420;        
+    --ink-2:#141c2b;      
+    --ink-3:#1c2637;     
+    --paper:#eef1f5;     
+    --muted:#8a97ab;     
+    --lime:#c6f24e;       
+    --cyan:#4fd1e0;       
     --line:rgba(255,255,255,.08);
     --radius:14px;
     --maxw:1080px;
@@ -35,7 +35,7 @@
   .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
   .mono{font-family:'JetBrains Mono',monospace}
 
-  /* ---- NAV ---- */
+
   header.nav{position:sticky;top:0;z-index:50;background:rgba(14,20,32,.82);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
   .nav-in{display:flex;align-items:center;justify-content:space-between;height:64px}
   .brand{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:15px;letter-spacing:.5px}
@@ -46,7 +46,7 @@
   .nav-toggle{display:none;background:none;border:0;color:var(--paper);font-size:22px;cursor:pointer}
   @media(max-width:680px){.nav-links{display:none}.nav-toggle{display:block}}
 
-  /* ---- HERO ---- */
+
   .hero{padding:96px 0 72px;position:relative}
   .hero:before{content:"";position:absolute;top:-140px;left:50%;transform:translateX(-50%);width:640px;height:640px;background:radial-gradient(circle,rgba(198,242,78,.10),transparent 62%);pointer-events:none}
   .eyebrow{font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--lime);letter-spacing:1px;margin-bottom:20px}
@@ -60,7 +60,7 @@
   .btn-ghost{border:1px solid var(--line);color:var(--paper)}
   .btn-ghost:hover{border-color:var(--muted)}
 
-  /* ---- CONSOLE (signature element) ---- */
+
   .console{margin-top:56px;background:var(--ink-2);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:0 30px 60px -30px rgba(0,0,0,.6)}
   .console-bar{display:flex;align-items:center;gap:8px;padding:12px 16px;border-bottom:1px solid var(--line);background:var(--ink-3)}
   .console-bar i{width:11px;height:11px;border-radius:50%;display:inline-block}
@@ -75,14 +75,14 @@
   .cursor{display:inline-block;width:8px;height:16px;background:var(--lime);vertical-align:-2px;animation:blink 1.1s steps(1) infinite}
   @keyframes blink{50%{opacity:0}}
 
-  /* ---- SECTION SHELL ---- */
+
   section{padding:80px 0}
   .sec-head{display:flex;align-items:baseline;gap:16px;margin-bottom:14px}
   .sec-num{font-family:'JetBrains Mono',monospace;color:var(--lime);font-size:14px}
   .sec-head h2{font-family:'Fraunces',serif;font-weight:500;font-size:clamp(26px,4vw,38px);letter-spacing:-.3px}
   .sec-sub{color:var(--muted);max-width:620px;margin-bottom:44px}
 
-  /* ---- PROJECTS ---- */
+
   .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
   @media(max-width:760px){.grid{grid-template-columns:1fr}}
   .card{background:var(--ink-2);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:transform .2s,border-color .2s}
@@ -96,7 +96,7 @@
   .chips{display:flex;flex-wrap:wrap;gap:7px}
   .chip{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--muted);border:1px solid var(--line);border-radius:20px;padding:4px 11px}
 
-  /* ---- STACK ---- */
+
   .stack-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
   @media(max-width:760px){.stack-grid{grid-template-columns:1fr}}
   .stack-col{background:var(--ink-2);border:1px solid var(--line);border-radius:var(--radius);padding:24px}
@@ -106,7 +106,7 @@
   .stack-col li:last-child{border-bottom:0}
   .stack-col li span{color:var(--muted);font-size:13px}
 
-  /* ---- ABOUT ---- */
+
   .about-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:start}
   @media(max-width:760px){.about-grid{grid-template-columns:1fr}}
   .about p{color:var(--muted);margin-bottom:16px;font-size:15.5px}
@@ -117,7 +117,7 @@
   .fact .k{color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:12.5px}
   .fact .v{color:var(--paper);font-weight:500}
 
-  /* ---- CONTACT ---- */
+
   .contact{text-align:center;background:var(--ink-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
   .contact h2{font-family:'Fraunces',serif;font-weight:500;font-size:clamp(28px,5vw,44px);margin-bottom:16px}
   .contact p{color:var(--muted);max-width:480px;margin:0 auto 30px}
@@ -126,7 +126,7 @@
   footer{padding:36px 0;text-align:center}
   footer .mono{font-size:12.5px;color:var(--muted)}
 
-  /* reveal on scroll */
+
   .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
   .reveal.in{opacity:1;transform:none}
   @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.cursor{animation:none}}
@@ -147,7 +147,7 @@
   </div>
 </header>
 
-<!-- HERO -->
+
 <section class="hero">
   <div class="wrap">
     <p class="eyebrow mono">// analista programador · full-stack + diseño de interfaces</p>
@@ -158,7 +158,7 @@
       <a href="#contacto" class="btn btn-ghost">Contacto</a>
     </div>
 
-    <!-- SIGNATURE: consola -->
+
     <div class="console reveal">
       <div class="console-bar">
         <i class="c-red"></i><i class="c-yellow"></i><i class="c-green"></i>
@@ -176,14 +176,14 @@
   </div>
 </section>
 
-<!-- PROYECTOS -->
+
 <section id="proyectos">
   <div class="wrap">
     <div class="sec-head"><span class="sec-num mono">01</span><h2>Proyectos de diseño</h2></div>
     <p class="sec-sub">Interfaces diseñadas de extremo a extremo: identidad de marca, estructura, jerarquía visual y justificación desde la experiencia de usuario.</p>
 
     <div class="grid">
-      <!-- PULSE -->
+
       <article class="card reveal">
         <div class="card-img"><img src="pulse.jpg" alt="PULSE — blog de música electrónica"></div>
         <div class="card-body">
@@ -194,7 +194,7 @@
         </div>
       </article>
 
-      <!-- SoundSprout -->
+  
       <article class="card reveal">
         <div class="card-img"><img src="soundsprout.jpg" alt="SoundSprout — app EDM"></div>
         <div class="card-body">
@@ -205,7 +205,7 @@
         </div>
       </article>
 
-      <!-- Vitalis -->
+
       <article class="card reveal">
         <div class="card-img"><img src="vitalis.jpg" alt="Vitalis — app veterinaria"></div>
         <div class="card-body">
@@ -216,7 +216,7 @@
         </div>
       </article>
 
-      <!-- Calvin Harris -->
+  
       <article class="card reveal">
         <div class="card-img"><img src="calvinharris.jpg" alt="Calvin Harris — interfaz web de una página"></div>
         <div class="card-body">
@@ -230,7 +230,7 @@
   </div>
 </section>
 
-<!-- STACK -->
+
 <section id="stack">
   <div class="wrap">
     <div class="sec-head"><span class="sec-num mono">02</span><h2>Stack técnico</h2></div>
@@ -267,7 +267,7 @@
   </div>
 </section>
 
-<!-- SOBRE MI -->
+
 <section id="sobre-mi">
   <div class="wrap">
     <div class="sec-head"><span class="sec-num mono">03</span><h2>Sobre mí</h2></div>
@@ -288,15 +288,15 @@
   </div>
 </section>
 
-<!-- CONTACTO -->
+
 <section id="contacto" class="contact">
   <div class="wrap">
     <h2>Trabajemos juntos</h2>
     <p>¿Un proyecto, una vacante o simplemente saludar? Aquí me encuentras.</p>
     <div class="contact-links">
-      <a href="https://github.com/TU-USUARIO" class="btn btn-primary">GitHub</a>
+      <a href="https://github.com/Alvita77" class="btn btn-primary">GitHub</a>
       <a href="mailto:TU-CORREO@ejemplo.com" class="btn btn-ghost">Correo</a>
-      <a href="https://www.linkedin.com/in/TU-USUARIO" class="btn btn-ghost">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/alvaro-alva-ascencion-2531a017b/" class="btn btn-ghost">LinkedIn</a>
     </div>
   </div>
 </section>
@@ -308,7 +308,7 @@
 </footer>
 
 <script>
-  // reveal on scroll
+
   const io = new IntersectionObserver((entries)=>{
     entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
   },{threshold:.14});
